@@ -1,0 +1,39 @@
+{
+  "name": "eventhorizon",
+  "version": "1.0.0",
+  "description": "=== Twenty Twenty-Two === Contributors: wordpressdotorg Requires at least: 5.9 Tested up to: 6.0 Requires PHP: 5.6 Stable tag: 1.2 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioSNW/sergiosn.git#master"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioSNW/sergiosn/issues"
+  },
+  "homepage": "https://github.com/SergioSNW/sergiosn/tree/master#readme",
+  "dependencies": {
+    "html": "^1.0.0",
+    "lit": "^2.4.0",
+    "lit-element": "^3.2.2",
+    "luxon": "^3.0.4",
+    "scripts": "^0.1.0",
+    "wordpress": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@wordpress/scripts": "^24.3.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

@@ -1,13 +1,31 @@
 const path = require('path');
-
+//const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+//const MiniCssExtractPlugin = require("css-minimizer-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("css-minimizer-webpack-plugin");
+// const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 module.exports = {
-    entry: './src/eventhorizon.js',
+    mode: "production",
+    entry: ['./style.css', './src/eventhorizon.js'],
     output: {
-        // path: path.resolve(--__dirname, 'dist'),
-        filename: 'eventhorizon.bundle.js',
+        filename: './dist/js/main.min.js',
+        path: path.resolve(__dirname)
     },
     module: {
-        rules: [{ test: /\.txt$/, use: 'raw-loader' }],
-    },
-    mode: 'production',
+        rules: [
+            // {
+            //     test: /\.js$/, exclude: /node_modules/,
+            //     use: {
+            //         loader: "babel-loader", 
+            //         options: { presets: ['n'] } 
+            //     }
+            // },
+            {
+                test: /\.css$/, use: 'css-loader'
+            }, 
+            {
+                test: /\.(sass|scss)$/,
+                use: [OptimizeCSSAssetsPlugin, 'css-loader', 'sass-loader']
+            } 
+        ]
+    }
 };
