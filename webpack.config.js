@@ -24,8 +24,8 @@ module.exports = {
             }, 
             {
                 test: /\.(sass|scss)$/,
-                use: [OptimizeCSSAssetsPlugin, 'css-loader', 'sass-loader']
-            } 
+                use: [OptimizeCSSAssetsPlugin, 'sass-loader', 'css-loader']
+            }
         ]
     }
 };
