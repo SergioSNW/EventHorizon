@@ -1,4 +1,4 @@
-NPM  Comentarios sobre modulos instalados (package.json)
+WebPack: Soporte CSS. Comentarios sobre modulos instalados (package.json)
     Parece que el plugin "optimize-css-assets-webpack-plugin" en WebPack 5.0++,
     ahora es "css-minimizer-webpack-plugin" 
     Instalado el nuevo y desinstalado el obsoleto con el cmd 
@@ -6,4 +6,18 @@ NPM  Comentarios sobre modulos instalados (package.json)
     He tenido que sustituir la constante siguiente en <webpack.config.js>
     const OptimizeCSSAssetsPlugin = require("css-minimizer-webpack-plugin");
     // const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
+
+webPack: Para la instalacion de SCSS y SASS
+    He instalado/desinstalado. (solo queda el mini-css......)
+        >> npm install   --save-dev mini-css-extract-plugin
+        >> npm uninstall --save-dev css-minimizer-webpack-plugin
+        >> npm uninstall --save-dev optimize-css-assets-webpack-plugin
+        >> npm uninstall --save-dev node-sass
+
+    Tambien desinstalo sass, pero al compilar lo pide, asi que reinstalo. Ahora pasa bien
+
+    Curioso: Al correr >> npx webpack --watch 
+    detecta cuando guardo fich: js/sass/css pero no veo que regenere el fich.Output 
+    COMPROBAR que al navegar si reconoce los cambios introducidos
  
