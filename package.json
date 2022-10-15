@@ -12,10 +12,10 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
-    "babel-core": "^6.26.3",
+    "@babel/preset-env": "^7.19.4",
     "babel-loader": "^8.2.5",
-    "babel-preset-env": "^1.7.0",
     "css-loader": "^6.7.1",
     "html-loader": "^4.2.0",
     "mini-css-extract-plugin": "^2.6.1",
