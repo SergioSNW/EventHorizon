@@ -1,9 +1,0 @@
-NPM  Comentarios sobre modulos instalados (package.json)
-    Parece que el plugin "optimize-css-assets-webpack-plugin" en WebPack 5.0++,
-    ahora es "css-minimizer-webpack-plugin" 
-    Instalado el nuevo y desinstalado el obsoleto con el cmd 
-    > npm uninstall --save-dev optimize-css-assets-webpack-plugin
-    He tenido que sustituir la constante siguiente en <webpack.config.js>
-    const OptimizeCSSAssetsPlugin = require("css-minimizer-webpack-plugin");
-    // const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
- 

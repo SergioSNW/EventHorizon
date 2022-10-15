@@ -65,3 +65,11 @@ add_action( 'wp_enqueue_scripts', 'twentytwentytwo_styles' );
 
 // Add block patterns
 require get_template_directory() . '/inc/block-patterns.php';
+
+
+
+// Add Bree-serif Font Family
+function eventhorizon_enqueue_style() {
+	wp_enqueue_style('custom_font', '//href="https://use.typekit.net/jmc8mwh.css', array(), null, 'all');
+}
+add_action( 'wp_enqueue_scripts', 'eventhorizon_enqueue_style' );
