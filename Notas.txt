@@ -25,7 +25,7 @@ webPack: Para la instalacion de SCSS y SASS
     posible que el watch actualice este fichero y el main-min.js lo referencie (¿¿¿???)
  
 
-webPack: Para la instalacion de BABEL
+webPack: Para la instalacion de BABEL 
     He ajustado todo a la version 7 de Babel (antes tenia un batiburrillo)
     El @babel/core ya estaba instalado. Luego, he instalado/desinstalado:
         npm install   --save-dev @babel/preset-env
