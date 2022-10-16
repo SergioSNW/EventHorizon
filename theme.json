@@ -1,9 +1,38 @@
 {
 	"version": 2,
-"settings": {},
-"styles": {
-	"blocks": {
-		"core/heading": {
+	"customTemplates": [
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "page-large-header",
+			"title": "Page (Large Header)",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-no-separators",
+			"title": "Single Post (No Separators)",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "page-no-separators",
+			"title": "Page (No Separators)",
+			"postTypes": [
+				"page"
+			]
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"duotone": [
 				{
@@ -179,7 +208,7 @@
 		},
 		"custom": {
 			"spacing": {
-				"x-small": "max(1rem, 4vw)",
+				"xsmall": "max(1rem, 4vw)",
 				"small": "max(1.25rem, 5vw)",
 				"medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
 				"large": "clamp(4rem, 10vw, 8rem)",
