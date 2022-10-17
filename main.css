@@ -6,7 +6,8 @@
 Theme Name: Event Horizon
 Theme URI: https://wordpress.org/themes/twentytwentytwo/
 Author: the WordPress team
-Author URI: https://wordpress.org/
+template: twentytwentytwo
+Author URI: https://sergiosn.com/
 Description: Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
 Requires at least: 5.9
 Tested up to: 6.0
@@ -156,58 +157,18 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
   margin-top: 29px;
   font-size: 64px !important;
   justify-items: center;
+  font-family: "Bree Serif", sans-serif;
+  font-weight: 500 !important;
 }
 
 /* Holding Page Header */
 .header-container {
   top: 0;
-  padding-top: var(--wp--custom--spacing--xsmall) !important;
-  padding-bottom: var(--wp--custom--spacing--xsmall) !important;
+  padding-top: var(--wp--custom--spacing--x-small) !important;
+  padding-bottom: var(--wp--custom--spacing--x-small) !important;
 }
 
 .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:active, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:hover, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:visited, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg {
   color: currentColor;
   fill: white;
-}
-/*!**************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pr_Juan/oo1.css ***!
-  \**************************************************************************************************************/
-html {
-  background-color: #CCC;
-}
-
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #F40;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #FFF;
-}
-
-nav li {
-  display: inline-block;
-}
-/*!***************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pr_Juan/zz1.sass ***!
-  \***************************************************************************************************************/
-html {
-  background-color: #C6C;
-}
-
-body {
-  font: 100% Helvetica, sans-serif;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #FFF;
-}
-nav li {
-  display: inline-block;
 }
