@@ -35,3 +35,19 @@ webPack: Para la instalacion de BABEL
 
     El @babel/cli es para probar la conversion: npx babel ./src/eventhorizon.js -o ./src/out.babel
     Si todo va a ser automatico, no sería necesario
+
+uso './pr_Juan_src/js/entryPoint.js' como punto de entrada (internamente llama a todo lo que quiero empaquetar)
+
+npm i --save lit
+npm i --save-dev copy-webpack-plugin   // Creo que no es necesario
+npm install --save-dev style-loader
+
+npm i webpack-bundle-analyzer --save-dev        // no me acaba de gustar. Se queda bloqueado hasta ctl+c
+npm i --save-dev eslint-reporting-webpack-plugin
+
+npm install css-minimizer-webpack-plugin --save-dev  // reduce tamaño 
+npm i compression-webpack-plugin --save-dev   //comprime los packs
+npm install --save-dev html-webpack-plugin  //inyecta los packs en un html
+
+Ejecucion con un fichconfig no_defecto
+npx webpack --config=webpack.config_version_final_BABEL.js

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./src/pr_Juan/index.js"></script>
+    <script src="./node_modules/dile-input/dile-input.js" type="module"></script>
+    <title>Documentoos</title>
+</head>
+<body>
+        <h1>dile-input demo</h1>
+      
+        <h2>Basic2q text field</h2>
+      
+        <dile-input
+          id="theInput"
+          name="the_input_name"
+          placeholder="Write something..."
+          label="Text field"
+        ></dile-input>
+      
+        <dile-input
+            name="input_name"
+            label="Text to the label"
+            value="Text to the input"
+            placeholder="Some text"
+            disabled
+            errored
+        ></dile-input>
+
+        <button id="theButton">Alert input value</button>
+            
+        <h2>Customized styles</h2>
+
+        <dile-input
+          class="customized"
+          placeholder="I'am customized"
+          label="Customized text field"
+          value="This text is in value attribute"
+        ></dile-input>
+      
+        <hr>
+      
+        <dile-input label="Input with error" value="I have an error!!" errored></dile-input>
+      
+        <script src="./src/pr_Juan/index.js" type="module"></script>
+</body>
+</html>
