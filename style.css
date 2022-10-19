@@ -184,3 +184,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	color: currentColor;
 	fill: white;
 }
+
+.has-bree-serif {
+	font-family: "Bree Serif", sans-serif !important;
+}
