@@ -11,8 +11,7 @@ const ESLintReportingPlugin = require('eslint-reporting-webpack-plugin');
 
 // Esta configuracion genera 2 bundles (css+js). El css esta minimizado por el plugin
 module.exports = {
-  entry: {pack: './pr_Juan_src/index.html'},
-  // entry: {pack: './pr_Juan_src/js/entryPoint.js'},
+  entry: {pack: './pr_Juan_src/js/entryPoint.js'},
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
@@ -44,13 +43,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        type: "asset/resource",
-        generator: {
-          filename: "[name][ext]",
-        },
-      },
-      {
         test: /\.html$/, use: 'html-loader'   
       },
       {
@@ -68,7 +60,7 @@ module.exports = {
     // new ESLintReportingPlugin()     // No veo que haga nada
     new SeparaPackCSS({ filename: '[name].bundle.css' }),
     new ComprimePacks(),
-    // new HTMLWebpackPlugin(),    // Genera dist/index.html que referencia los packs generados
+    new HTMLWebpackPlugin(),    // Genera dist/index.html que referencia los packs generados
     // {
     //   filename: './pr_Juan_src/htmlOut.html',     // fich.salida
       // template: './pr_Juan_src/pr.html',     // fich.entrada/template

@@ -6,4 +6,5 @@ import "../css/zz1.sass";
 // Scripts - App
 import './app.js';
 import './prueba1.js';
+import './my-element.js';
 // import '../index.html';
