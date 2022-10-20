@@ -10,8 +10,7 @@
 //    Hay un ejemplo, llamado 'pag@components.html' en el raiz del theme
 // 4. Debería ser capaz de debugarse (incluye los mapas), pero no lo he probado aun.
 //
-// IMPORTANTE: Si ejecutas   
-//             npx webpack --config=webpack.config.@libComponents.js -w
+// IMPORTANTE: Si ejecutas...  npm run libcomp  (script incluido en package.json)
 //             cuando termine de empaquetar, queda en watching para regenerarse cuando se actualiza el catalogo
 //             o cualquiera de los componentes empaquetados
  
