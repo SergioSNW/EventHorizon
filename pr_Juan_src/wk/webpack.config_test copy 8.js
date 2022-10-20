@@ -11,24 +11,13 @@ const ESLintReportingPlugin = require('eslint-reporting-webpack-plugin');
 
 // Esta configuracion genera 2 bundles (css+js). El css esta minimizado por el plugin
 module.exports = {
-  entry: {pack: './pr_Juan_src/index.html'},
+  entry: {pack: './pr_Juan_src/js/entryPoint.js'},
   // entry: {pack: './pr_Juan_src/js/entryPoint.js'},
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
   },
   stats: {
-    // preset: 'normal',         // Report normal 
-    // // preset: 'all', 
-    // // preset: 'verbose',       // Para report muy detallado
-    // groupModulesByPath: false,
-    // groupModulesByExtension: false,
-    // outputPath: true,
-    // modulesSpace: 35,
-    // assets: true,
-    // orphanModules: true,
-    // preset: 'normal',         // Report normal  
-    // errorDetails: true,
     groupModulesByPath: false,
     groupModulesByExtension: false,
     modulesSpace: 200,

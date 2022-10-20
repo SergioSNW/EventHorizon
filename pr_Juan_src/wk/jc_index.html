@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./src/pr_Juan/index.js"></script>
-    <script src="./node_modules/dile-input/dile-input.js" type="module"></script>
+    <script src="../../src/@components/@libComponents.js" type="module"></script>
     <title>Documentoos</title>
 </head>
 <body>
         <h1>dile-input demo</h1>
       
         <h2>Basic2q text field</h2>
-      
+        <dile-input 
+  label="Nombre completo"
+  placeholder="Escribe tu nombre y apellidos"
+></dile-input>
+<dile-input 
+  label="Edad"
+  value="18"
+></dile-input>
+<dile-input 
+  label="Campo desactivado"
+  disabled
+></dile-input>
         <dile-input
           id="theInput"
           name="the_input_name"
@@ -26,7 +37,6 @@
             label="Text to the label"
             value="Text to the input"
             placeholder="Some text"
-            disabled
             errored
         ></dile-input>
 
