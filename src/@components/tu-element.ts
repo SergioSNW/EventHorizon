@@ -12,7 +12,7 @@ export class TuElement extends LitElement {
 
   // Declare reactive properties
   @property()
-  name?: string = 'World';
+  name?: string = 'Munddo cruel';
 
   // Render the UI as a function of component state
   render() {

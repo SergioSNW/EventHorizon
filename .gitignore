@@ -3,3 +3,5 @@ dist/
 saveFichCode-workspace.zip
 *.code-workspace
 pr_Juan_lit
+src/@components/@libComponents.js
+stats-lastBuild-@libComponents.html

@@ -9,6 +9,8 @@
 // 3. Montar el html para las pruebas incluyendo  <script src="..apuntando a la libreria.."></script>
 //    Hay un ejemplo, llamado 'pag@components.html' en el raiz del theme
 // 4. Debería ser capaz de debugarse (incluye los mapas), pero no lo he probado aun.
+// 5. Actualiza stats-lastBuild-@libComponents.html (en el raiz) con la
+//    composicion y volumetria del ultimo empaquetado de la libreria
 //
 // IMPORTANTE: Si ejecutas...  npm run libcomp  (script incluido en package.json)
 //             cuando termine de empaquetar, queda en watching para regenerarse cuando se actualiza el catalogo
@@ -16,6 +18,7 @@
  
 const path = require('path');
 const ReduceSizeCSS = require('css-minimizer-webpack-plugin');
+const StatsReportPlugin = require("webpack-stats-report").StatsReportPlugin;
 
 module.exports = {
   entry:  './src/@components/@catalogo.js',
@@ -55,5 +58,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new StatsReportPlugin({ 
+      //options
+      title: "Composicion y volumenes de @libComponents (plugin: webpack-stats-report)",
+      output: "./stats-lastBuild-@libComponents.html"
+    })
   ]
 }
