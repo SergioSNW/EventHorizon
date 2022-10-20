@@ -21,7 +21,7 @@ const ReduceSizeCSS = require('css-minimizer-webpack-plugin');
 module.exports = {
   entry:  './src/@components/@catalogo.js',
   output: {
-    path: path.resolve(__dirname, 'src/@components'),
+    path: path.resolve(__dirname),
     filename: '@libComponents.js',
   },
   stats: {
