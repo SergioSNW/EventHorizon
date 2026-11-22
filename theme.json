@@ -36,32 +36,50 @@
 		"color": {
 			"duotone": [
 				{
-					"colors": [ "#000000", "#ffffff" ],
+					"colors": [
+						"#10131A",
+						"#EFEDE6"
+					],
 					"slug": "foreground-and-background",
 					"name": "Foreground and background"
 				},
 				{
-					"colors": [ "#000000", "#ffe2c7" ],
+					"colors": [
+						"#10131A",
+						"#1A1F29"
+					],
 					"slug": "foreground-and-secondary",
 					"name": "Foreground and secondary"
 				},
 				{
-					"colors": [ "#000000", "#f6f6f6" ],
+					"colors": [
+						"#10131A",
+						"#2A3140"
+					],
 					"slug": "foreground-and-tertiary",
 					"name": "Foreground and tertiary"
 				},
 				{
-					"colors": [ "#1a4548", "#ffffff" ],
+					"colors": [
+						"#6FD6CC",
+						"#10131A"
+					],
 					"slug": "primary-and-background",
 					"name": "Primary and background"
 				},
 				{
-					"colors": [ "#1a4548", "#ffe2c7" ],
+					"colors": [
+						"#6FD6CC",
+						"#1A1F29"
+					],
 					"slug": "primary-and-secondary",
 					"name": "Primary and secondary"
 				},
 				{
-					"colors": [ "#1a4548", "#f6f6f6" ],
+					"colors": [
+						"#6FD6CC",
+						"#2A3140"
+					],
 					"slug": "primary-and-tertiary",
 					"name": "Primary and tertiary"
 				}
@@ -111,98 +129,98 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#000000",
-					"name": "Foreground"
+					"color": "#B9C0CC",
+					"name": "Fog (body text)"
 				},
 				{
 					"slug": "background",
-					"color": "#ffffff",
-					"name": "Background"
+					"color": "#10131A",
+					"name": "Ink (page background)"
 				},
 				{
 					"slug": "primary",
-					"color": "#1a4548",
-					"name": "Primary"
+					"color": "#6FD6CC",
+					"name": "Signal (links, buttons, active state)"
 				},
 				{
 					"slug": "secondary",
-					"color": "#ffe2c7",
-					"name": "Secondary"
+					"color": "#1A1F29",
+					"name": "Panel (case-study and alt-section background)"
 				},
 				{
 					"slug": "tertiary",
-					"color": "#F6F6F6",
-					"name": "Tertiary"
+					"color": "#2A3140",
+					"name": "Hairline (borders)"
 				},
 				{
 					"slug": "dark",
-					"color": "#151515",
-					"name": "Dark"
+					"color": "#10131A",
+					"name": "Ink (dark header variant)"
 				},
 				{
 					"slug": "offwhite",
-					"color": "#f5f5f5",
-					"name": "Offwhite"
+					"color": "#EFEDE6",
+					"name": "Bone (headlines, name)"
 				},
 				{
 					"slug": "beige",
-					"color": "#f4f0d8",
-					"name": "Beige"
+					"color": "#1A1F29",
+					"name": "Panel (unused slot, kept equal to Panel)"
 				},
 				{
 					"slug": "navy",
-					"color":"#2C528C",
-					"name": "Navy"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "blue",
-					"color": "#51A0D5",
-					"name": "Blue"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "aqua",
-					"color": "#78C5EF",
-					"name": "Aqua"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "yellow",
-					"color": "#ffe993",
-					"name": "Yellow"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "orange",
-					"color": "#eb831c",
-					"name": "Orange"
+					"color": "#C97B4A",
+					"name": "Copper (secondary accent, 'in development' status)"
 				},
 				{
 					"slug": "purple",
-					"color": "#b344ff",
-					"name": "Purple"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "mauve",
-					"color": "#ffb6ff",
-					"name": "Mauve"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "magenta",
-					"color": "#CA2266",
-					"name": "Magenta"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "green",
-					"color": "#A4D03B",
-					"name": "Green"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "forest",
-					"color": "#4DB05C",
-					"name": "Forest"
+					"color": "#2A3140",
+					"name": "Hairline (unused slot, kept equal to Hairline)"
 				},
 				{
 					"slug": "whitecream",
-					"color": "#fffaf1",
-					"name": "Whitecream"
+					"color": "#EFEDE6",
+					"name": "Bone (unused slot, kept equal to Bone)"
 				}
 			]
 		},
@@ -247,25 +265,19 @@
 					"slug": "system-font"
 				},
 				{
-					"fontFamily": "\"Source Serif Pro\", serif",
-					"name": "Source Serif Pro",
-					"slug": "source-serif-pro",
-					"fontFace": [
-						{
-							"fontFamily": "Source Serif Pro",
-							"fontWeight": "200 900",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2" ]
-						},
-						{
-							"fontFamily": "Source Serif Pro",
-							"fontWeight": "200 900",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2" ]
-						}
-					]
+					"fontFamily": "'Space Grotesk', system-ui, sans-serif",
+					"name": "Space Grotesk",
+					"slug": "space-grotesk"
+				},
+				{
+					"fontFamily": "'IBM Plex Sans', system-ui, sans-serif",
+					"name": "IBM Plex Sans",
+					"slug": "ibm-plex-sans"
+				},
+				{
+					"fontFamily": "'IBM Plex Mono', ui-monospace, monospace",
+					"name": "IBM Plex Mono",
+					"slug": "ibm-plex-mono"
 				}
 			],
 			"fontSizes": [
@@ -308,8 +320,8 @@
 			},
 			"core/post-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
 				}
@@ -328,8 +340,8 @@
 			},
 			"core/query-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--small)",
 					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
 				}
@@ -341,11 +353,11 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--system-font)",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontStyle": "italic",
-					"fontWeight": "normal"
+					"fontStyle": "normal",
+					"fontWeight": "500"
 				}
 			}
 		},
@@ -356,57 +368,75 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--custom--typography--font-size--colossal)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--small)",
 					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--custom--typography--font-size--huge)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
+					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--preset--font-size--x-large)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--system-font)",
-					"fontWeight": "700",
-					"textTransform": "uppercase",
+					"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)",
+					"fontWeight": "600",
+					"textTransform": "none",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--system-font)",
-					"fontWeight": "400",
-					"textTransform": "uppercase",
+					"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)",
+					"fontWeight": "500",
+					"textTransform": "none",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--foreground)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			}
 		},
@@ -414,10 +444,11 @@
 			"blockGap": "1.5rem"
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--system-font)",
+			"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)",
 			"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 			"fontSize": "var(--wp--preset--font-size--medium)"
-		}
+		},
+		"css": ".ds-panel{background:var(--wp--preset--color--secondary);border:1px solid var(--wp--preset--color--tertiary);clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,0 100%);padding:var(--wp--custom--spacing--small,1.25rem)}\n.ds-status{display:inline-flex;align-items:center;gap:.5em;font-family:var(--wp--preset--font-family--ibm-plex-sans);font-size:.95rem;color:var(--wp--preset--color--foreground)}\n.ds-status::before{content:\"\";width:.6em;height:.6em;border-radius:50%;background:currentColor}\n.ds-status.is-finished{color:var(--wp--preset--color--primary)}\n.ds-status.is-in-development{color:var(--wp--preset--color--orange)}\n.ds-stack{font-family:var(--wp--preset--font-family--ibm-plex-mono);font-size:.85rem;color:var(--wp--preset--color--foreground);opacity:.85}"
 	},
 	"templateParts": [
 		{
