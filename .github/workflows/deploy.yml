@@ -1,0 +1,44 @@
+name: Deploy theme to IONOS
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-ionos
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Upload theme over SFTP
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_REMOTE_DIR: ${{ secrets.SFTP_REMOTE_DIR }}
+        run: |
+          lftp -u "$SFTP_USER","$SFTP_PASSWORD" "sftp://$SFTP_HOST" <<EOF
+          set sftp:auto-confirm yes
+          set net:max-retries 2
+          set net:timeout 20
+          mirror -R --verbose --parallel=2 \
+            --exclude-glob .git* \
+            --exclude-glob node_modules \
+            --exclude-glob dist \
+            --exclude-glob src \
+            --exclude-glob package*.json \
+            --exclude-glob webpack.config.js \
+            --exclude-glob .babelrc \
+            --exclude-glob Notas.txt \
+            --exclude-glob clavo \
+            . "$SFTP_REMOTE_DIR"
+          bye
+          EOF
