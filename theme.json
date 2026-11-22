@@ -37,48 +37,48 @@
 			"duotone": [
 				{
 					"colors": [
-						"#10131A",
-						"#EFEDE6"
+						"#1B2230",
+						"#F5F7FA"
 					],
 					"slug": "foreground-and-background",
 					"name": "Foreground and background"
 				},
 				{
 					"colors": [
-						"#10131A",
-						"#1A1F29"
+						"#1B2230",
+						"#FFFFFF"
 					],
 					"slug": "foreground-and-secondary",
 					"name": "Foreground and secondary"
 				},
 				{
 					"colors": [
-						"#10131A",
-						"#2A3140"
+						"#1B2230",
+						"#D5DAE3"
 					],
 					"slug": "foreground-and-tertiary",
 					"name": "Foreground and tertiary"
 				},
 				{
 					"colors": [
-						"#6FD6CC",
-						"#10131A"
+						"#0E7C86",
+						"#F5F7FA"
 					],
 					"slug": "primary-and-background",
 					"name": "Primary and background"
 				},
 				{
 					"colors": [
-						"#6FD6CC",
-						"#1A1F29"
+						"#0E7C86",
+						"#FFFFFF"
 					],
 					"slug": "primary-and-secondary",
 					"name": "Primary and secondary"
 				},
 				{
 					"colors": [
-						"#6FD6CC",
-						"#2A3140"
+						"#0E7C86",
+						"#D5DAE3"
 					],
 					"slug": "primary-and-tertiary",
 					"name": "Primary and tertiary"
@@ -129,98 +129,108 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#B9C0CC",
-					"name": "Fog (body text)"
+					"color": "#1B2230",
+					"name": "Ink text (body)"
 				},
 				{
 					"slug": "background",
-					"color": "#10131A",
-					"name": "Ink (page background)"
+					"color": "#F5F7FA",
+					"name": "Paper (page background)"
 				},
 				{
 					"slug": "primary",
-					"color": "#6FD6CC",
-					"name": "Signal (links, buttons, active state)"
+					"color": "#0E7C86",
+					"name": "Teal (links, buttons)"
 				},
 				{
 					"slug": "secondary",
-					"color": "#1A1F29",
-					"name": "Panel (case-study and alt-section background)"
+					"color": "#FFFFFF",
+					"name": "Panel (white surface)"
 				},
 				{
 					"slug": "tertiary",
-					"color": "#2A3140",
+					"color": "#D5DAE3",
 					"name": "Hairline (borders)"
 				},
 				{
 					"slug": "dark",
 					"color": "#10131A",
-					"name": "Ink (dark header variant)"
+					"name": "Ink (dark surfaces, header)"
 				},
 				{
 					"slug": "offwhite",
-					"color": "#EFEDE6",
-					"name": "Bone (headlines, name)"
+					"color": "#F5F7FA",
+					"name": "Paper (light text on dark)"
 				},
 				{
 					"slug": "beige",
-					"color": "#1A1F29",
-					"name": "Panel (unused slot, kept equal to Panel)"
+					"color": "#f4f0d8",
+					"name": "Beige"
 				},
 				{
 					"slug": "navy",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#2C528C",
+					"name": "Navy"
 				},
 				{
 					"slug": "blue",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#51A0D5",
+					"name": "Blue"
 				},
 				{
 					"slug": "aqua",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#78C5EF",
+					"name": "Aqua"
 				},
 				{
 					"slug": "yellow",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#ffe993",
+					"name": "Yellow"
 				},
 				{
 					"slug": "orange",
-					"color": "#C97B4A",
-					"name": "Copper (secondary accent, 'in development' status)"
+					"color": "#eb831c",
+					"name": "Orange"
 				},
 				{
 					"slug": "purple",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#b344ff",
+					"name": "Purple"
 				},
 				{
 					"slug": "mauve",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#ffb6ff",
+					"name": "Mauve"
 				},
 				{
 					"slug": "magenta",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#CA2266",
+					"name": "Magenta"
 				},
 				{
 					"slug": "green",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#A4D03B",
+					"name": "Green"
 				},
 				{
 					"slug": "forest",
-					"color": "#2A3140",
-					"name": "Hairline (unused slot, kept equal to Hairline)"
+					"color": "#4DB05C",
+					"name": "Forest"
 				},
 				{
 					"slug": "whitecream",
-					"color": "#EFEDE6",
-					"name": "Bone (unused slot, kept equal to Bone)"
+					"color": "#fffaf1",
+					"name": "Whitecream"
+				},
+				{
+					"slug": "signal",
+					"color": "#6FD6CC",
+					"name": "Signal (links on dark surfaces)"
+				},
+				{
+					"slug": "copper",
+					"color": "#B4561F",
+					"name": "Copper (in-development status)"
 				}
 			]
 		},
@@ -372,9 +382,6 @@
 					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--custom--typography--font-size--colossal)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h2": {
@@ -383,9 +390,6 @@
 					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--small)",
 					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h3": {
@@ -394,9 +398,6 @@
 					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--custom--typography--font-size--huge)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h4": {
@@ -405,9 +406,6 @@
 					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
 					"fontSize": "var(--wp--preset--font-size--x-large)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h5": {
@@ -417,9 +415,6 @@
 					"textTransform": "none",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"h6": {
@@ -429,14 +424,16 @@
 					"textTransform": "none",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)"
-				},
-				"color": {
-					"text": "var(--wp--preset--color--offwhite)"
 				}
 			},
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--dark)"
+					}
 				}
 			}
 		},
@@ -448,7 +445,7 @@
 			"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 			"fontSize": "var(--wp--preset--font-size--medium)"
 		},
-		"css": ".ds-panel{background:var(--wp--preset--color--secondary);border:1px solid var(--wp--preset--color--tertiary);clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,0 100%);padding:var(--wp--custom--spacing--small,1.25rem)}\n.ds-status{display:inline-flex;align-items:center;gap:.5em;font-family:var(--wp--preset--font-family--ibm-plex-sans);font-size:.95rem;color:var(--wp--preset--color--foreground)}\n.ds-status::before{content:\"\";width:.6em;height:.6em;border-radius:50%;background:currentColor}\n.ds-status.is-finished{color:var(--wp--preset--color--primary)}\n.ds-status.is-in-development{color:var(--wp--preset--color--orange)}\n.ds-stack{font-family:var(--wp--preset--font-family--ibm-plex-mono);font-size:.85rem;color:var(--wp--preset--color--foreground);opacity:.85}\n/* Temporary contrast safety net: text set with old light-theme palette slugs stays readable on the dark background. */\n.has-dark-color,.has-secondary-color,.has-tertiary-color,.has-navy-color,.has-blue-color,.has-aqua-color,.has-yellow-color,.has-purple-color,.has-mauve-color,.has-magenta-color,.has-green-color,.has-forest-color,.has-beige-color{color:var(--wp--preset--color--offwhite)!important}"
+		"css": ".ds-panel{background:var(--wp--preset--color--secondary);border:1px solid var(--wp--preset--color--tertiary);clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,0 100%);padding:var(--wp--custom--spacing--small,1.25rem)}\n.ds-status{display:inline-flex;align-items:center;gap:.5em;font-family:var(--wp--preset--font-family--ibm-plex-sans);font-size:.95rem;color:var(--wp--preset--color--foreground)}\n.ds-status::before{content:\"\";width:.6em;height:.6em;border-radius:50%;background:currentColor}\n.ds-status.is-finished{color:var(--wp--preset--color--primary)}\n.ds-status.is-in-development{color:var(--wp--preset--color--copper)}\n.ds-stack{font-family:var(--wp--preset--font-family--ibm-plex-mono);font-size:.85rem;color:var(--wp--preset--color--foreground);opacity:.85}\n.has-dark-background-color,.has-foreground-background-color{color:var(--wp--preset--color--offwhite)}\n.has-dark-background-color a,.has-foreground-background-color a{color:var(--wp--preset--color--signal)}\n.has-dark-background-color .wp-block-site-title a,.has-foreground-background-color .wp-block-site-title a{color:var(--wp--preset--color--offwhite)}\n.has-dark-background-color .wp-block-navigation a,.has-dark-background-color .wp-block-navigation .wp-block-navigation-item__content,.has-foreground-background-color .wp-block-navigation a{color:var(--wp--preset--color--signal)!important}\n:where(a,button,.wp-block-button__link):focus-visible{outline:2px solid var(--wp--preset--color--primary);outline-offset:2px}"
 	},
 	"templateParts": [
 		{

@@ -19,6 +19,6 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
 
 // Add Bree-serif Font Family
 function eventhorizon_enqueue_style() {
-	wp_enqueue_style('custom_font', '//href="https://use.typekit.net/jmc8mwh.css', array(), null, 'all');
+	wp_enqueue_style('custom_font', 'https://use.typekit.net/jmc8mwh.css', array(), null, 'all');
 }
 add_action( 'wp_enqueue_scripts', 'eventhorizon_enqueue_style' );
