@@ -29,6 +29,13 @@
 			"postTypes": [
 				"page"
 			]
+		},
+		{
+			"name": "sergio-page-layout-main",
+			"title": "Sergio Page Layout main",
+			"postTypes": [
+				"page"
+			]
 		}
 	],
 	"settings": {
