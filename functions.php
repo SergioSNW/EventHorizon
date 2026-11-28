@@ -22,3 +22,6 @@ function eventhorizon_enqueue_style() {
 	wp_enqueue_style('custom_font', 'https://use.typekit.net/jmc8mwh.css', array(), null, 'all');
 }
 add_action( 'wp_enqueue_scripts', 'eventhorizon_enqueue_style' );
+
+// SEO: titles, descriptions, social previews, structured data
+require_once get_stylesheet_directory() . '/inc/seo.php';
